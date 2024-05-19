@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Employee Manager</h1>
+<div>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" value={{employee.name}}><br>
+        
+        <label for="designation">Designation:</label><br>
+        <input type="text" id="designation" name="designation" value={{employee.designation}}><br>
+        
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" name="address" value={{employee.address}}><br><br>
+
+        <button type="submit">Update Employee</button>
+    </form>
+</div>
+</body>
+</html>

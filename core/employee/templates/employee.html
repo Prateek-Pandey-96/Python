@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Employee Manager</h1>
+<div>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        
+        <label for="designation">Designation:</label><br>
+        <input type="text" id="designation" name="designation"><br>
+        
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" name="address"><br><br>
+
+        <button type="submit">Add Employee</button>
+    </form>
+</div>
+<br>
+<div>
+    {% if employees|length > 0 %}
+    <table>
+        <tr>
+            <th>#</th>
+            <td>Name</td>
+            <td>Designation</td>
+            <td>Address</td>
+            <td>Delete</td>
+            <td>Update</td>
+        </tr>
+        {% for employee in employees %}
+        <tr>
+            <th>{{forloop.counter}}</th>
+            <td>{{employee.name}}</td>
+            <td>{{employee.designation}}</td>
+            <td>{{employee.address}}</td>
+            <td><a href="/delete-employee/{{employee.id}}">Delete</a></td>
+            <td><a href="/update-employee/{{employee.id}}">Update</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+</div>
+</body>
+</html>
