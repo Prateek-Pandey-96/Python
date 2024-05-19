@@ -1,21 +1,10 @@
-Install virtualenv
-    pip install virtualenv
-    python -m virtualenv env
-    ./env/Scripts/activate
 
-Install django
-    pip install django
+# Simple Django starter
 
-Create Project
-    django-admin startproject core
-    cd core
+The following project is a simple Django starter project torefresh basics of django
 
-Create app
-    python manage.py startapp home    
+### Technologies used 
 
-
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-
-python manage.py makemigrations
-
-python manage.py migrate
+| ![Python](https://cdn-icons-png.flaticon.com/128/1822/1822920.png) | ![Django](https://cdn-icons-png.flaticon.com/128/9307/9307630.png) 
+|:--:|:--:|
+*Python*| *Django*

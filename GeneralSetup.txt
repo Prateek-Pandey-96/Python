@@ -1,0 +1,21 @@
+Install virtualenv
+    pip install virtualenv
+    python -m virtualenv env
+    ./env/Scripts/activate
+
+Install django
+    pip install django
+
+Create Project
+    django-admin startproject core
+    cd core
+
+Create app
+    python manage.py startapp home    
+
+
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+python manage.py makemigrations
+
+python manage.py migrate
