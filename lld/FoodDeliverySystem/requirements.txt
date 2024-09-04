@@ -1,0 +1,10 @@
+Design a food delivery system like zomato
+
+Functional requirements
+
+1> User should be able to login
+2> User should be able to search a restaurant based on location
+3> List all the food items in a restaurant
+4> Placing a order
+5> Make a payment
+6> Send a notification to user about order confirmation
