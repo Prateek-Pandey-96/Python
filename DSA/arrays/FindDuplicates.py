@@ -3,11 +3,10 @@ class Solution:
         # cyclic sort
         n = len(nums)
         for i in range(n):
-            while nums[i] != i+1:
-                pos = nums[i]-1
+            pos = nums[i]-1
+            while nums[i] != i+1 and nums[pos]!=nums[i]:
                 nums[i], nums[pos] = nums[pos], nums[i]
-                if nums[pos]==nums[i]:
-                    break
+                pos = nums[i]-1
 
         result = []
         for i in range(n):
