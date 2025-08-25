@@ -18,7 +18,7 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
 python manage.py makemigrations
 
-python manage.py migrate
+hello
 
 
-hi brother
+hello
